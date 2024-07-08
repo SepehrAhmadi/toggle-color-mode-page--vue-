@@ -1,0 +1,77 @@
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: $primary-light-color;
+  padding: 15px 20px;
+  height: 60px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+
+  &.dark {
+    background-color: $secondary-dark-color;
+  }
+
+  &-logo-icon {
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  &-logo-text {
+    font-size: 2em;
+    color: $primary-text-color;
+    margin-right: auto;
+  }
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+    user-select: none;
+
+    p {
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+
+    &-slider {
+      width: 35px;
+      height: 16px;
+      background-color: $primary-dark-color;
+      border-radius: 2rem;
+      margin-inline: 7px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid black;
+      box-sizing: content-box;
+    }
+    .nav.dark &-slider {
+      justify-content: flex-end;
+      background-color: $primary-text-color;
+    }
+
+    &-slider-circle{
+        height: 16px;
+        width: 16px;
+        background-color: $primary-light-color;
+        border-radius: 50%;
+    }
+    .nav.dark &-slider-circle{
+        background-color: $primary-dark-color;
+    }
+
+    &-light{
+        color: #2b283a;
+    }
+    .nav.dark &-light{
+        color: #b3b3b3;
+    }
+
+    &-dark{
+        color: #b3b3b3;
+    } 
+    .nav.dark &-dark{
+        color: #ffffff;
+    }
+  }

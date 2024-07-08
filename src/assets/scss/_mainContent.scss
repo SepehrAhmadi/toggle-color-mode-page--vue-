@@ -1,0 +1,42 @@
+.main {
+    padding: 30px 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    flex: 1 1 auto;
+    background-color: white;
+    color: $primary-dark-color;
+
+    &.dark{
+        background-color: $primary-dark-color;
+        color: $primary-light-color;
+    }
+
+    &-title{
+        margin: 0;
+        font-size: 3.5em;
+        letter-spacing: -0.05em;
+        color: $secondary-text-color;
+    }
+    &.dark &-title{
+        color: $primary-text-color;
+    }
+
+    &-facts{
+        margin-top: 25px;
+        max-width: 600px;
+        color: $secondary-text-color;
+
+        & > li {
+            font-size: 1.5em;
+            margin-bottom: 14px;
+
+            &::marker{
+                font-size: 1.5em;
+                color: $primary-text-color;
+            }
+        }
+    }
+    &.dark &-facts{
+        color: $primary-text-color;
+    }
+  }
